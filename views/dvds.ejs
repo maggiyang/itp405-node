@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dvds</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+
+<ul>
+    <h4><%= dvds.length %> dvds found.</h4>
+
+    <% dvds.forEach(function(dvd){ %>
+        <li>Title: <%= dvd.title %>, Award: <%= dvd.award %> </li>
+    <% })  %>
+</ul>
+
+</body>
+</html>
